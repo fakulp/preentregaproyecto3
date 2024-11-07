@@ -1,0 +1,380 @@
+/*courrusel con bs*/
+.imagenFondo {
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption h5 {
+  color: black !important;
+}
+
+.carousel-caption p {
+  color: black !important;
+}
+
+/*Secciones con  Flex*/
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menuOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  gap: 10px;
+}
+
+.menuOne img {
+  width: 100%;
+  border-radius: 10px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Opiniones con Flexbox */
+.opinions-border {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.avatars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.avatars img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.avatars h3 {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.avatars p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.opinions-border {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contenedor principal del contacto */
+.contact-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+/* Estilo del mapa */
+.maps {
+  flex: 1;
+  min-width: 400px;
+  max-width: 500px;
+  height: 450px;
+}
+
+/* Estilo del formulario */
+.formOne {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Botones del formulario */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/*TIENDA Y AMULETOS*/
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20%;
+  min-width: 150px;
+  background-color: #f0f0f0;
+  padding: 15px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.categories {
+  list-style: none;
+  padding: 0;
+}
+
+.categories li {
+  margin-bottom: 10px;
+}
+
+.categories a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Grid de productos */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 75%;
+}
+
+/* Tarjeta de producto */
+.product-card {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-card p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .opinions-border {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .maps,
+  .formOne {
+    max-width: 100%;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    width: 100%;
+    order: 2;
+  }
+  .product-grid {
+    width: 100%;
+  }
+  .mainPreguntas {
+    padding: 10px;
+  }
+  .cadaPregunta {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+/*ESTILOS PREGUNTAS FRECUENTES*/
+.mainPreguntas {
+  padding: 20px;
+}
+
+.cadaPregunta {
+  background: violet;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pregunta {
+  color: #35424a;
+}
+
+.parrafos {
+  margin: 10px 0;
+}
+
+/* Header */
+header {
+  background-color: #c513e9;
+  padding: 10px;
+}
+
+/*nav con flex*/
+#listaNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.linkNav {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.imgLogo {
+  height: 50px;
+  width: auto;
+}
+
+/* FOOTER */
+footer {
+  background-color: #c513e9;
+  color: white;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+.footerOne img {
+  height: 50px;
+}
+
+.footerTwo ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footerTwo_copyright h3,
+.footerTwo_copyright h4 {
+  margin-top: 5px;
+}
+
+.footer__redes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer__redes i {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.linkNav {
+  transition: color 0.3s ease;
+}
+.linkNav:hover {
+  color: #ffd700;
+}
+
+.product-card {
+  animation-name: aparecer;
+  animation-duration: 1s;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/*# sourceMappingURL=style.css.map */

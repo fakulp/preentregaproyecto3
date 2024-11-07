@@ -1,0 +1,57 @@
+/*TIENDA Y AMULETOS*/
+.shop-section {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px;
+}
+/* Sidebar */
+.sidebar {
+    width: 20%; 
+    min-width: 150px;
+    background-color: #f0f0f0;
+    padding: 15px;
+}
+.search-bar {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+.categories {
+    list-style: none;
+    padding: 0;
+}
+.categories li {
+    margin-bottom: 10px;
+}
+.categories a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+/* Grid de productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    width: 75%;
+}
+/* Tarjeta de producto */
+.product-card {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+.product-card img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+}
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.product-card p {
+    margin: 5px 0;
+}

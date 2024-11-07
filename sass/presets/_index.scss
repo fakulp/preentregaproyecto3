@@ -1,0 +1,119 @@
+  /*courrusel con bs*/
+  .imagenFondo {
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+  }
+  .carousel-caption h5 {
+    color: black !important;
+  }
+  .carousel-caption p {
+    color: black !important;
+  }
+  /*Secciones con  Flex*/
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .menuOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    gap: 10px;
+  }
+  .menuOne img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  /* Opiniones con Flexbox */
+  .opinions-border {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .avatars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .avatars img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  .avatars h3 {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  .avatars p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  .opinions-border {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Contenedor principal del contacto */
+  .contact-container { 
+    text-align: center;
+    margin-top: 20px;
+  }
+  .contact-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  /* Estilo del mapa */
+  .maps {
+    flex: 1;
+    min-width: 400px;
+    max-width: 500px;
+    height: 450px;
+  }
+  /* Estilo del formulario */
+  .formOne {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+  }
+  form input,
+  form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  /* Botones del formulario */
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }

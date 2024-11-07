@@ -1,0 +1,25 @@
+/* Header */
+header {
+    background-color: #c513e9;
+    padding: 10px;
+  }
+  /*nav con flex*/
+  #listaNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navBar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .linkNav {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  .imgLogo {
+    height: 50px;
+    width: auto;
+  }
